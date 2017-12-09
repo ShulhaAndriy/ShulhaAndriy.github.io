@@ -1,0 +1,35 @@
+p {
+
+color:#424242;
+font-size:12px;
+font-family:Verdana,Tahoma,Arial;
+font-weight:normal
+
+}
+
+p.new {
+
+font-weight:bold;
+color:#cc0000;
+
+}
+
+.rule {
+
+color:#00cc00;
+
+
+}
+
+p strong {
+
+color:#0000cc;
+
+}
+
+a:link {color:#000000; text-decoration:underline;}
+a:visited {color:#cc0000; text-decoration:none;}
+a:hover {color:orange;  text-decoration:underline;}
+a:active {color:#00cc00;  text-decoration:overline;}
+
+
