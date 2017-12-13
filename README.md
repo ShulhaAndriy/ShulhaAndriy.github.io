@@ -1,1 +1,0 @@
-# ShulhaAndriy.github.io
