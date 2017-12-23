@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<title>Угадай число от 1 до 10</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="js.js" defer></script>
+</head>
+<body>
+	<div id="page">
+		<div>Угадай число</div>
+		<input type="text" id="mynum">
+		<button id="check">Угадать</button>
+		<div id="out"></div>
+		<div id="count">Попыток: 10</div>
+	</div>
+</body>
+</html>
