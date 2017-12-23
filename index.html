@@ -1,147 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Резюме</title>
-	<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
-	<style>
-		body {
-			width: 650px;
-			margin: 0 auto;
-			margin-top: 5px;
-			margin-bottom: 5px;
-			font-family: Calibri;
-		}
-		#page {
-			border: 5px solid grey;
-			float: left;
-		}
-		.header {
-			height: 60px;
-			background-color: #425360;
-			text-align: center;
-			padding-top: 18px;
-			font-size: 30px;
-			color: white;
-		}
-		.menu {
-			float: left;
-			width: 160px;
-			background: linear-gradient(to right, #595959, #828080);
-			color: white;
-			text-align: center;
-		}
-		.content {
-			float: left;
-			width: 400px;
-			color: #0a1a68;
-			padding: 10px;
-			font-size: 18px;
-		}
-		.avatar {
-			text-align: center;
-			padding-top: 20px;
-			padding-right: 20px;
-		    	padding-left: 15px;
-		    	padding-bottom: 20px;
-		}
-		.name {
-			text-align: left;
-			font-size: 32px;
-			border-bottom: 2px solid yellow;
-			margin: 10px;
-		}
-		.line {
-			border-bottom: 2px solid blue;
-			padding-top: 10px;
-			padding-bottom: 10px;
-		}
-		.ref {
-			color: #07b7f2;
-			font-size: 14px;
-		}
-		.hobby {
-			font-size: 18px;
-			margin-top: 10px;
-			margin-bottom: 10px;
-		}
-		table {
-			white-space: pre;
-			font-size: 14px;
-			margin-left: 5px;
-			}
-		td {
-			border-radius: 5px;
-			padding: 3px;
-		}
-		.contacts {
-			font-size: 18px;
-			}
-		li {
-			text-align: left;
-		}	
-	</style>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<title>Угадай число от 1 до 10</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="js.js" defer></script>
 </head>
 <body>
 	<div id="page">
-		<div class="header">
-			Curriculum vitae
-		</div>
-		<div class="menu">
-			<div class="avatar">
-				<img src="tiger.jpg" alt="Userpic" width="100" style="border-radius: 30px; border: 2px solid silver"/>
-			</div>
-			<div class="name">
-				Тимур<br>Иванов
-			</div>
-			<div class="hobby"><ins><b>Люблю:</b></ins>
-				<table>
-					<td></td>
-				</table>
-	            <table>
-	                <td style="background-color: orange">        Сметанку        </td>
-	            </table>
-	            <table>
-	                <td style="background-color: royalblue">   Молочко   </td>
-	            </table>
-	            <table>
-	                <td style="background-color: green">            Мясоооо            </td> 
-	            </table>
-	            <table>
-	                <td style="background-color: violet">Рыбу</td>   
-	            </table>
-        	</div>
-			<div class="contacts">
-				<ins><b>Контакты</b></ins>
-	            <ul>
-	            <li>
-	            <a class="ref" href="https://www.instagram.com/tigertimur/">Instagram</a>
-	            </li>
-	            <li>
-	            <a class="ref" href="https://www.facebook.com/tigertimur/">Facebook</a>
-	            </li>        
-	            </ul>    
-            </div>
-		</div>
-		<div class="content">
-			<div class="line">
-				<b>Дата рождения:</b>
-				<br>10 июля 2010г
-				<br><b>Место рождения:</b>
-				<br>зоопарк		
-			</div>
-			<div class="line">
-				<b>Soft skills:</b>
-				<br>- Photoshop
-				<br>- Word
-				<br>- Paint			
-			</div>
-			<div class="line">
-				<b>Обо мне:</b>
-				<br>- Курю
-				<br>- Пью
-				<br>- Бегаю				
-			</div>
-		</div>
-	</div>	    
+		<div>Угадай число</div>
+		<input type="text" id="mynum">
+		<button id="check">Угадать</button>
+		<div id="out"></div>
+		<div id="count">Попыток: 10</div>
+	</div>
 </body>
 </html>
