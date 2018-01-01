@@ -14,7 +14,7 @@ document.getElementById('check').onclick = function (){
 			out.innerHTML = "Введіть число від 1 до 100";
 		}
 		else {
-			if (usernum > 0 && usernum < 100) {
+			if (usernum > 0 && usernum <= 100) {
 				if (usernum == number) {
 				out.innerHTML = 'Ура, ви вгадали!!! Справились за ' + attempt + ' раз (а)';
 				check.disabled = true;
