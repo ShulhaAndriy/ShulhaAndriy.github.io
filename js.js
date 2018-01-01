@@ -11,30 +11,30 @@ document.getElementById('check').onclick = function (){
 		var attempt = limit - count;
 		
 		if (isNaN(usernum)) {
-			out.innerHTML = "Введите число от 1 до 100";
+			out.innerHTML = "Введіть число від 1 до 100, а не текст";
 		}
 		else {
 			if (usernum > 0 && usernum < 100) {
 				if (usernum == number) {
-				out.innerHTML = 'Ура, вы угадали!!! Справились за ' + attempt + ' раз (а)';
+				out.innerHTML = 'Ура, ви вгадали!!! Справились за ' + attempt + ' раз (а)';
 				check.disabled = true;
 				}
 				else if (usernum > number) {
-				out.innerHTML = 'Ваше число больше';
+				out.innerHTML = 'Перестарались. Введіть меньше число';
 				}
 				else if (usernum<number){
-				out.innerHTML = 'Ваше число меньше';
+				out.innerHTML = 'Мало. Введіть більше число';
 				}
-				document.getElementById('count').innerHTML = 'Осталось попыток: '+count+' из '+limit;
+				document.getElementById('count').innerHTML = 'Залишилось спроб: '+count+' із '+limit;
 				count = count - 1;
 			}
 			else {
-				out.innerHTML = 'Введите число от 1 до 100';
+				out.innerHTML = 'Введіть число в межах від 1 до 100';
 			}
 		}	
 	}
 	else {
-		alert ('Попытки закончены, вы проиграли. Попробуйте еще. Загаданое число: ' + number);
+		alert ('Ви вичерпали ліміт спроб, ви проиграли. Спробуйте ще. Загадане число: ' + number);
 		location.reload();
 	}
 }
