@@ -31,7 +31,7 @@ document.getElementById('check').onclick = function (){
 			else {
 				out.innerHTML = 'Введіть число в межах від 1 до 100';
 			}
-		}	
+		}
 	}
 	else {
 		alert ('Ви вичерпали ліміт спроб, ви проиграли. Спробуйте ще. Загадане число: ' + number);
