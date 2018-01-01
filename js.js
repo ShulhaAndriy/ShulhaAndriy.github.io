@@ -11,7 +11,7 @@ document.getElementById('check').onclick = function (){
 		var attempt = limit - count;
 		
 		if (isNaN(usernum)) {
-			out.innerHTML = "Введіть число від 1 до 100, а не текст";
+			out.innerHTML = "Введіть число від 1 до 100";
 		}
 		else {
 			if (usernum > 0 && usernum < 100) {
